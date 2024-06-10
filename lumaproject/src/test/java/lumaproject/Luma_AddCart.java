@@ -27,6 +27,13 @@ WebDriver driver;
 	By Ecotype = By.xpath("//*[@id=\"narrow-by-list\"]/div[1]/div[2]/ol/li");
 	By Material = By.xpath("//*[@id=\"narrow-by-list\"]/div[3]/div[1]");
 	By Materialtype =By.xpath("//*[@id=\"narrow-by-list\"]/div[3]/div[2]/ol/li[4]/a");
+	By Addcart = By.xpath("//*[@id=\"wishlist-sidebar\"]/li/div/div/div[2]/div[1]/button/span");
+	By Updatewishlist = By.xpath("//*[@id=\"maincontent\"]/div[2]/div/div[1]/div[5]/div/a[1]/span");
+	By Addtoall = By.xpath("//*[@id=\"wishlist-view-form\"]/div[2]/div[1]/button[3]/span");
+	By Mycart = By.xpath("/html/body/div[2]/header/div[2]/div[1]/a");
+	By Checkout = By.xpath("//*[@id=\"top-cart-btn-checkout\"]");
+	By Next = By.xpath("//*[@id=\"shipping-method-buttons-container\"]/div/button/span");
+	By Placeorder = By.xpath("//*[@id=\"checkout-payment-method-load\"]/div/div/div[2]/div[2]/div[4]/div/button/span");
 	
 	public void CWomen () throws InterruptedException
 	{
@@ -109,6 +116,47 @@ WebDriver driver;
 	public void CMaterialtype () throws InterruptedException
 	{
 		driver.findElement(Materialtype).click();
+		Thread.sleep(3000);
+	}
+	
+	public void CAddcart () throws InterruptedException
+	{
+		driver.findElement(Addcart).click();
+		Thread.sleep(3000);
+	}
+	
+	public void CUpdatewishlist () throws InterruptedException
+	{
+		driver.findElement(Updatewishlist).click();
+		Thread.sleep(3000);
+	}
+	
+	public void CAddtoall () throws InterruptedException
+	{
+		driver.findElement(Addtoall).click();
+		Thread.sleep(3000);
+	}
+	
+	public void CMycart () throws InterruptedException
+	{
+		driver.findElement(Mycart).click();
+		Thread.sleep(3000);
+	}
+	public void CCheckout () throws InterruptedException
+	{
+		driver.findElement(Checkout).click();
+		Thread.sleep(3000);
+	}
+	
+	public void CNext () throws InterruptedException
+	{
+		driver.findElement(Next).click();
+		Thread.sleep(3000);
+	}
+	
+	public void CPlaceorder () throws InterruptedException
+	{
+		driver.findElement(Placeorder).click();
 		Thread.sleep(3000);
 	}
 }

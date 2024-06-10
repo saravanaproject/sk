@@ -35,6 +35,13 @@ public class TestAddcart {
         lac.CEcotype();
         lac.CMaterial();
         lac.CMaterialtype();
+        lac.CAddcart();
+        lac.CUpdatewishlist();
+        lac.CAddtoall();
+        lac.CMycart();
+        lac.CCheckout();
+        lac.CNext();
+        lac.CPlaceorder();
      
  }
 
